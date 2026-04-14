@@ -12,6 +12,7 @@
         --muted: #475569;
         --line: #e2e8f0;
         --accent: #3d54e8;
+        --accent-soft: #e9edff;
       }
 
       * {
@@ -36,12 +37,13 @@
         background: var(--card);
         border: 1px solid var(--line);
         border-radius: 16px;
-        padding: 20px;
+        padding: 22px;
+        box-shadow: 0 12px 32px rgba(15, 23, 42, 0.06);
       }
 
       h1 {
-        margin: 0 0 8px;
-        font-size: 28px;
+        margin: 0 0 6px;
+        font-size: 30px;
       }
 
       .sub {
@@ -54,6 +56,8 @@
         font-size: 18px;
         margin: 26px 0 8px;
         color: var(--accent);
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 6px;
       }
 
       p {
@@ -69,6 +73,28 @@
         margin-bottom: 6px;
       }
 
+      a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .badge {
+        display: inline-block;
+        background: var(--accent-soft);
+        color: var(--accent);
+        border: 1px solid #d7dffe;
+        border-radius: 999px;
+        padding: 4px 10px;
+        font-size: 12px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
       .foot {
         margin-top: 22px;
         padding-top: 14px;
@@ -76,11 +102,28 @@
         color: var(--muted);
         font-size: 13px;
       }
+
+      @media (max-width: 700px) {
+        .wrap {
+          padding: 14px 10px 28px;
+        }
+
+        .card {
+          padding: 16px;
+          border-radius: 12px;
+        }
+
+        h1 {
+          font-size: 23px;
+          line-height: 1.4;
+        }
+      }
     </style>
   </head>
   <body>
     <main class="wrap">
       <section class="card">
+        <span class="badge">وثيقة رسمية</span>
         <h1>سياسة الخصوصية - حساباتي بلس</h1>
         <p class="sub">آخر تحديث: 2026/04/13</p>
 
@@ -91,7 +134,7 @@
         <h2>2. من نحن</h2>
         <p>تطبيق حساباتي بلس هو تطبيق لإدارة الحسابات والمعاملات المالية.</p>
         <p>الجهة المطوّرة: Mohammed Said</p>
-        <p>للتواصل معنا: accounts@sticky.onl</p>
+        <p>للتواصل معنا: <a href="mailto:accounts@sticky.onl">accounts@sticky.onl</a></p>
 
         <h2>3. البيانات التي نجمعها</h2>
         <p>نقوم بجمع البيانات التالية فقط لتقديم وتحسين الخدمة:</p>
@@ -161,7 +204,7 @@
           <li>طلب تعديل أو حذف بياناتك</li>
           <li>سحب الموافقة على معالجة بيانات معينة (عند الإمكان)</li>
         </ul>
-        <p>لأي طلب، يرجى التواصل عبر: accounts@sticky.onl</p>
+        <p>لأي طلب، يرجى التواصل عبر: <a href="mailto:accounts@sticky.onl">accounts@sticky.onl</a></p>
 
         <h2>10. الأطفال</h2>
         <p>هذا التطبيق غير موجه للأشخاص دون 18 عامًا، ولا نقوم بجمع بيانات منهم بشكل متعمد.</p>
@@ -171,7 +214,7 @@
         <p>سيتم إشعار المستخدمين عبر التطبيق أو من خلال تحديث تاريخ "آخر تحديث".</p>
 
         <h2>12. التواصل</h2>
-        <p>إذا كان لديك أي استفسار بخصوص هذه السياسة، يمكنك التواصل معنا عبر: accounts@sticky.onl</p>
+        <p>إذا كان لديك أي استفسار بخصوص هذه السياسة، يمكنك التواصل معنا عبر: <a href="mailto:accounts@sticky.onl">accounts@sticky.onl</a></p>
 
         <p class="foot">هذه الصفحة مخصصة للنشر كرابط رسمي لسياسة الخصوصية في المتاجر.</p>
       </section>
